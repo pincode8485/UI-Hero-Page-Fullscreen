@@ -13,7 +13,8 @@
         body, html {
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            margin: 0;
+            padding: 0;
         }
         .hero {
             font-family: 'Times New Roman';
@@ -22,10 +23,12 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            width: 100vw;
-            height: 100vh;
-            background: url('Hero-BACKGROUND.jpg') center/cover no-repeat;
-            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            background-image: url('Hero-BACKGROUND.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
         }
         .hero h1 {
             font-size: 120px;
@@ -62,7 +65,7 @@
     <section class="hero">
         <h1>WELCOME</h1>
         <p>Selamat datang di halaman utama Ma'soem University. Cageur, Bageur, Pinter!</p>
-        <img src="Hero-LOGO.jpg" alt="Hero Image">
+        <img src="Hero-LOGO.png" alt="Hero Image">
     </section>
 </body>
 </html>
