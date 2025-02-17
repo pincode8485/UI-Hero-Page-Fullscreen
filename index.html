@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .hero {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            background: url('Hero-BACKGROUND.jpg') center/cover no-repeat;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 120px;
+            font-style: bold;
+            color: #eec20f;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 36px;
+            color: #1660cd;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .hero img {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            max-width: 150px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>WELCOME</h1>
+        <p>Selamat datang di halaman utama Ma'soem University. Cageur, Bageur, Pinter!</p>
+        <img src="Hero-LOGO.jpg" alt="Hero Image">
+    </section>
+</body>
+</html>
